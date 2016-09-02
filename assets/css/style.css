@@ -9,7 +9,7 @@ html,
 body {
     background-color: #ffffff;
     font-size: 14px;
-    color: #999999;
+    color:  #000033;
     width: 100%;
     padding: 0;
     margin-left: 0;
@@ -596,7 +596,7 @@ textarea::-ms-input-placeholder
 .button {
     display: inline-block;
     margin-bottom: 10px;
-    color: #999999;
+    color:  #000033;
     font-size: 14px;
     cursor: pointer;
     outline: none;
