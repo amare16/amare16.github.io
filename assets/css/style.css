@@ -483,7 +483,7 @@ textarea::-ms-input-placeholder
     color: #000000;
     text-transform: capitalize;
     font-family: 'open_sanssemibold';
-    font-size: 20px;
+    font-size: 14px;
     background-color: #999966;
 }
 .nav>li>a:hover, .nav>li>a:focus {
@@ -554,7 +554,7 @@ textarea::-ms-input-placeholder
     margin-bottom: 10px;
 }
 #service {
-    background-color: #ffaf1a;
+    background-color: #ffffff;
 }
 
 
@@ -562,7 +562,7 @@ textarea::-ms-input-placeholder
 
 /* Portfolio Section */
 .portfolio {
-    background-color: #ffaf1a;
+    background-color: #ffffff;
 }
 .portffolio_menu{
     width:100%;
@@ -688,7 +688,7 @@ textarea::-ms-input-placeholder
     width:70%;
 }
 #brand, #testimonial {
-    background-color: #ffaf1a;
+    background-color: #ffffff;
 }
 /* Testimonial Section */
 .carousel-indicators {
@@ -782,7 +782,7 @@ textarea::-ms-input-placeholder
 /* Contact Section */
 
 .contact{
-    background: #3b404c;
+    background: #d4d7de;
     padding: 80px 0;
 }
 .contact h1,h5{
@@ -798,13 +798,13 @@ textarea::-ms-input-placeholder
     font-family: 'lorabold';
 }
 .contact-top li a{
-    color: #ffffff;
+    color: black;
     text-transform: uppercase;
     font-family: 'open_sanssemibold';
     transition: .3s ease-in-out;
 }
 .contact-top li a:hover{
-    color: #00a5ff;
+    color: #ffff00;
 }
 .contact-left-info{
     margin-bottom: 50px;
@@ -816,8 +816,9 @@ textarea::-ms-input-placeholder
 }
 .contact-form .form-group label{
     font-size: 22px;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 .contact-form button{
     margin-top: 30px;
