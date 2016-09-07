@@ -409,12 +409,18 @@ form-control
                                 <li><a href="#contact">Contact Me</a></li>
                             </ul>
                         <div class="contact-form">
-                            <form action="" method="POST">
+                            <form id="contactform" action="//formspree.io/amarenighatu16@gmail.com" method="POST">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12 col-xs-12">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Name</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" name="name" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email</label>
+                                            <input type="email" name="_replyto" class="form-control" placeholder="">
                                         </div>
                                     </div>
 
@@ -430,7 +436,7 @@ form-control
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Your Message</label>
-                                            <textarea rows="7" class="form-control" id="exampleInputPassword1" placeholder=""></textarea>
+                                            <textarea name="message" rows="7" class="form-control" id="exampleInputPassword1" placeholder=""></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -438,6 +444,14 @@ form-control
                                     <button type="submit" class="btn btn-primary">Send Message</button>
                                 </div>
                             </form>
+                            <!-- contact-warning -->
+                                <div id="message-warning">
+                                </div>
+                                <!-- contact-success -->
+                          		<div id="message-success">
+                                   <i class="fa fa-check"></i>Your message was sent, Thank you!<br>
+                          		</div>
+
                         </div>
                     </div>
 

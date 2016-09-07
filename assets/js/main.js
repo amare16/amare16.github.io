@@ -187,7 +187,7 @@ jQuery(document).ready(function ($) {
         }
 
     });
-
+    $('#message-success').hide();
 
     //End
 });
