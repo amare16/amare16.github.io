@@ -803,7 +803,7 @@ textarea::-ms-input-placeholder
     transition: .3s ease-in-out;
 }
 .contact-top li a:hover{
-    color: #ffff00;
+    color: red;
 }
 .contact-left-info{
     margin-bottom: 50px;
