@@ -191,3 +191,6 @@ jQuery(document).ready(function ($) {
 
     //End
 });
+function myHobbies() {
+    document.getElementById('hobbies').innerHTML = "Travail d'équipe<br>Autodidacte<br>Voyagers<br>Football";
+}

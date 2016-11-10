@@ -93,6 +93,7 @@ ul {
 }
 img {
     max-width: 100%;
+    margin-top: -15px;
 }
 textarea,
 input[type="text"],
@@ -217,10 +218,54 @@ p:last-child {
     float: left;
     color: #ffffff;
 }
-#hobbie {
-    color: #ffffff;
-    background: #ffffff;
+/* Qualities and Hobbies */
+#hobbies {
+
+    font-size: 30px;
+    background-color: #004A7F;
+    -webkit-border-radius: 10px;
+      border-radius: 10px;
+      border: none;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Arial;
+      font-size: 20px;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
 }
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+#hobbies {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
 
 /*
 Section
@@ -784,7 +829,7 @@ textarea::-ms-input-placeholder
     padding: 80px 0;
 }
 .contact h1,h5{
-    color: #000000;
+    color: #ffffff;
     font-weight: 900;
 }
 
