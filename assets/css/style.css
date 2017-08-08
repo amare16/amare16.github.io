@@ -249,7 +249,7 @@ p:last-child {
 
 #name {
     text-align: center;
-    color: #444422;
+    color: #ffffff;
 }
 
 
@@ -261,7 +261,7 @@ p:last-child {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border: none;
-    color: #FFFFFF;
+    color: #666633;
     cursor: pointer;
     display: inline-block;
     font-family: Arial;
@@ -273,16 +273,16 @@ p:last-child {
 
 @-webkit-keyframes glowing {
     0% {
-        background-color: #B20000;
-        -webkit-box-shadow: 0 0 3px #B20000;
+        background-color: yellow;
+        -webkit-box-shadow: 0 0 3px yellow;
     }
     50% {
-        background-color: #FF0000;
-        -webkit-box-shadow: 0 0 40px #FF0000;
+        background-color: yellow;
+        -webkit-box-shadow: 0 0 40px yellow;
     }
     100% {
-        background-color: #B20000;
-        -webkit-box-shadow: 0 0 3px #B20000;
+        background-color: yellow;
+        -webkit-box-shadow: 0 0 3px yellow;
     }
 }
 
@@ -303,31 +303,31 @@ p:last-child {
 
 @-o-keyframes glowing {
     0% {
-        background-color: #B20000;
-        box-shadow: 0 0 3px #B20000;
+        background-color: yellow;
+        box-shadow: 0 0 3px yellow;
     }
     50% {
-        background-color: #FF0000;
-        box-shadow: 0 0 40px #FF0000;
+        background-color: yellow;
+        box-shadow: 0 0 40px yellow;
     }
     100% {
-        background-color: #B20000;
-        box-shadow: 0 0 3px #B20000;
+        background-color: yellow;
+        box-shadow: 0 0 3px yellow;
     }
 }
 
 @keyframes glowing {
     0% {
-        background-color: #B20000;
-        box-shadow: 0 0 3px #B20000;
+        background-color: yellow;
+        box-shadow: 0 0 3px yellow;
     }
     50% {
-        background-color: #FF0000;
-        box-shadow: 0 0 40px #FF0000;
+        background-color: yellow;
+        box-shadow: 0 0 40px yellow;
     }
     100% {
-        background-color: #B20000;
-        box-shadow: 0 0 3px #B20000;
+        background-color: yellow;
+        box-shadow: 0 0 3px yellow;
     }
 }
 

@@ -1,23 +1,23 @@
 "use strict";
 
 
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($) {
 
 
-	/*---------------------------------------------*
+    /*---------------------------------------------*
      * Preloader
      ---------------------------------------------*/
 
-	$(window).load(function () {
-		$(".loaded").fadeOut();
-		$(".preloader").delay(1000).fadeOut("slow");
-	});
+    $(window).load(function() {
+        $(".loaded").fadeOut();
+        $(".preloader").delay(1000).fadeOut("slow");
+    });
 
 
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
-    $('#navbar-collapse').find('a[href*=#]:not([href=#])').click(function () {
+    $('#navbar-collapse').find('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -37,7 +37,7 @@ jQuery(document).ready(function ($) {
      * Isotop for portfolio
      ---------------------------------------------*/
 
-    $(function () {
+    $(function() {
         // init Isotope
         var $grid = $('.portfolio-one').isotope({
             itemSelector: '.portfolio-item',
@@ -46,27 +46,27 @@ jQuery(document).ready(function ($) {
         // filter functions
         var filterFns = {
             // show if number is greater than 50
-            numberGreaterThan50: function () {
+            numberGreaterThan50: function() {
                 var number = $(this).find('.number').text();
                 return parseInt(number, 10) > 50;
             },
             // show if name ends with -ium
-            ium: function () {
+            ium: function() {
                 var name = $(this).find('.name').text();
                 return name.match(/ium$/);
             }
         };
         // bind filter button click
-        $('.filters-button-group').on('click', 'button', function () {
+        $('.filters-button-group').on('click', 'button', function() {
             var filterValue = $(this).attr('data-filter');
             // use filterFn if matches value
-            filterValue = filterFns[ filterValue ] || filterValue;
-            $grid.isotope({filter: filterValue});
+            filterValue = filterFns[filterValue] || filterValue;
+            $grid.isotope({ filter: filterValue });
         });
         // change is-checked class on buttons
-        $('.button-group').each(function (i, buttonGroup) {
+        $('.button-group').each(function(i, buttonGroup) {
             var $buttonGroup = $(buttonGroup);
-            $buttonGroup.on('click', 'button', function () {
+            $buttonGroup.on('click', 'button', function() {
                 $buttonGroup.find('.is-checked').removeClass('is-checked');
                 $(this).addClass('is-checked');
             });
@@ -77,7 +77,7 @@ jQuery(document).ready(function ($) {
     /*---------------------------------------------*
      * Scroll Up
      ---------------------------------------------*/
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(this).scrollTop() > 600) {
             $('.scrollup').fadeIn('slow');
         } else {
@@ -85,8 +85,8 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('.scrollup').click(function () {
-        $("html, body").animate({scrollTop: 0}, 1000);
+    $('.scrollup').click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
         return false;
     });
 
@@ -99,7 +99,7 @@ jQuery(document).ready(function ($) {
 
 
 
-        $(window).scroll(function () {
+        $(window).scroll(function() {
             if ($(this).scrollTop() > 300) {
                 $('.navbar').fadeIn(300);
                 $('.navbar').addClass('menu-bg');
@@ -139,10 +139,10 @@ jQuery(document).ready(function ($) {
      * Counter
      ---------------------------------------------*/
 
-//    $('.statistic-counter').counterUp({
-//        delay: 10,
-//        time: 2000
-//    });
+    //    $('.statistic-counter').counterUp({
+    //        delay: 10,
+    //        time: 2000
+    //    });
 
 
 
@@ -151,10 +151,10 @@ jQuery(document).ready(function ($) {
      * WOW
      ---------------------------------------------*/
 
-//        var wow = new WOW({
-//            mobile: false // trigger animations on mobile devices (default is true)
-//        });
-//        wow.init();
+    //        var wow = new WOW({
+    //            mobile: false // trigger animations on mobile devices (default is true)
+    //        });
+    //        wow.init();
 
 
     /* ---------------------------------------------------------------------
@@ -191,6 +191,7 @@ jQuery(document).ready(function ($) {
 
     //End
 });
+
 function myHobbies() {
     document.getElementById('hobbies').innerHTML = "Travail d'équipe<br>Autodidacte<br>Voyagers<br>Football";
 }
